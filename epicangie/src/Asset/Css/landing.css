@@ -1,0 +1,82 @@
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-pop-in {
+    animation: pop-in .6s ease-out forwards;
+    opacity: 0;
+}
+
+.header-title {
+    animation-delay: .8s;
+}
+
+.header-subtitle {
+    animation-delay: 1s;
+}
+
+.header-button {
+    animation-delay: 1.1s;
+}
+
+@keyframes rotate-up {
+    100% {
+        transform: rotateZ(-4deg);
+    }
+}
+
+header:after {
+    animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: -5%;
+    position: absolute;
+    right: -5%;
+    top: 90%;
+    transform-origin: 0 0;
+    z-index: 0;
+}
+
+.heading-margin {
+    color: rgb(255, 255, 255);
+    margin-top: 25%;
+}
+
+.common-margin {
+    color: rgb(255, 255, 255);
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.marginTop2cen {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin-top: 1%;
+}
+
+.BooksCard {
+    background-color: black !important;
+    color: white;
+    border-radius: 5px 5px 10% 5px;
+   
+}
+
+.collab {
+    margin-top: 10%;
+    text-align: center !important;
+    color: white !important;
+}
+.commonHeadSpace{
+    color: rgb(255,255,255);
+    margin-top: 20%;
+}
+
+  
